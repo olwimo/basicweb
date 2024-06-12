@@ -1125,6 +1125,11 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
+"@tsconfig/recommended@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@tsconfig/recommended/-/recommended-1.0.6.tgz#217b78f9601215939d566a79d202a760ae185114"
+  integrity sha512-0IKu9GHYF1NGTJiYgfWwqnOQSlnE9V9R7YohHNNf0/fj/SyOZWzdd06JFr0fLpg1Mqw0kGbYg8w5xdkSqLKM9g==
+
 "@types/body-parser@*":
   version "1.19.5"
   resolved "https://registry.yarnpkg.com/@types/body-parser/-/body-parser-1.19.5.tgz#04ce9a3b677dc8bd681a17da1ab9835dc9d3ede4"
@@ -2193,7 +2198,7 @@ execa@^5.0.0:
     signal-exit "^3.0.3"
     strip-final-newline "^2.0.0"
 
-express@^4.17.3:
+express@^4.17.3, express@^4.19.2:
   version "4.19.2"
   resolved "https://registry.yarnpkg.com/express/-/express-4.19.2.tgz#e25437827a3aa7f2a827bc8171bbbb664a356465"
   integrity sha512-5T6nhjsT+EOMzuck8JjBHARTHfMht0POzlA60WV2pMD3gyXw2LZnZ+ueGdNxG+0calOJcWKbpFcuzLZ91YWq9Q==
@@ -3961,7 +3966,7 @@ webpack-cli@^5.1.4:
     rechoir "^0.8.0"
     webpack-merge "^5.7.3"
 
-webpack-dev-middleware@^7.1.0:
+webpack-dev-middleware@^7.1.0, webpack-dev-middleware@^7.2.1:
   version "7.2.1"
   resolved "https://registry.yarnpkg.com/webpack-dev-middleware/-/webpack-dev-middleware-7.2.1.tgz#2af00538b6e4eda05f5afdd5d711dbebc05958f7"
   integrity sha512-hRLz+jPQXo999Nx9fXVdKlg/aehsw1ajA9skAneGmT03xwmyuhvF93p6HUKKbWhXdcERtGTzUCtIQr+2IQegrA==

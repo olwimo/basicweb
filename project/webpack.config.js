@@ -22,7 +22,7 @@ module.exports = {
     },
     entry: path.resolve(__dirname, 'src', 'index.ts'),
     output: {
-        filename: '[name].js',
+        filename: '[name]-[chunkhash].js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
         publicPath: '/',
@@ -33,14 +33,20 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             title: "Project",
-            template: path.resolve(__dirname, "assets", "index.ejs"),
+            // template: path.resolve(__dirname, "assets", "index.ejs"),
         }),
     ],
+    resolve: {
+        alias: {
+            '@src': path.resolve(__dirname, 'src'),
+        },
+    },
     module: {
         rules: [
             {
                 test: /\.m?[jt]sx?$/i,
-                exclude: /node_modules|assets|dist/,
+                include: path.resolve(__dirname, 'src'),
+                exclude: /node_modules/,
                 use: {
                     loader: "babel-loader",
                     // "options": {
@@ -50,12 +56,14 @@ module.exports = {
             },
             {
                 test: /\.ejs$/i,
-                exclude: /node_modules|assets|dist/,
+                include: path.resolve(__dirname, 'src'),
+                exclude: /node_modules/,
                 use: ['html-loader', 'template-ejs-loader'],
             },
             {
                 test: /\.s[ac]ss$/i,
-                exclude: /node_modules|assets|dist/,
+                include: path.resolve(__dirname, 'src'),
+                exclude: /node_modules/,
                 use: [
                     // Creates `style` nodes from JS strings
                     "style-loader",
