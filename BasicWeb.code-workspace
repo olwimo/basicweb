@@ -1,0 +1,15 @@
+{
+    "folders": [
+        {
+            "path": "project",
+            "name": "Project"
+        }
+    ],
+    "settings": {
+        "files.eol": "\n",
+        "input-assist.languages": [
+            "plaintext"
+        ],
+        "task.allowAutomaticTasks": "on"
+    }
+}

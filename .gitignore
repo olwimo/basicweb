@@ -1,0 +1,14 @@
+node_modules
+.DS_Store
+.env
+.ipynb_*
+.pnpm-store
+
+# Yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
