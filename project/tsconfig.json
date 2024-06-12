@@ -1,13 +1,30 @@
 {
     "extends": "@tsconfig/recommended/tsconfig.json",
-    "include": [
-        "src/**/*.ts"
-    ],
     "compilerOptions": {
+        "module": "commonjs",
+        "allowJs": true,
+        "checkJs": false,
+        "jsx": "react",
+        // "outDir": "./dist",
+        // "rootDir": "./src",
+        "baseUrl": "./src",
+        "removeComments": true,
+        "noEmit": true,
+        "pretty": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
         "paths": {
             "@src/*": [
                 "./src/*"
             ]
         }
-    }
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
 }

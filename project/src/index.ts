@@ -1,12 +1,10 @@
-// import _ from 'lodash';
+import { createRoot } from 'react-dom/client';
+import { App } from './App';
 
-function component() {
-    const element = document.createElement('div');
+const base = document.createElement('div');
 
-    // Lodash
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+document.body.appendChild(base);
 
-    return element;
-}
+const root = createRoot(base);
 
-document.body.appendChild(component());
+root.render(App());
